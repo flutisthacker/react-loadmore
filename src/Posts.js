@@ -4,7 +4,7 @@ import Post from "./Post";
 const Posts = ({ posts }) => {
   console.log(posts);
   return (
-    <div classname="post-lisiting">
+    <div className="post-lisiting">
       {posts.map((post) => {
         return <Post key={post.id} title={post.title} body={post.body} />;
       })}
